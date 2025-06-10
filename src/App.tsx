@@ -110,21 +110,21 @@ function App() {
               animate={{ opacity: 1, x: 0 }}
               className="flex items-center space-x-2"
             >
-              <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
+              <div className="w-8 h-8 bg-gradient-to-r from-brand-blue to-brand-teal rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-sm">W</span>
               </div>
-              <span className="text-xl font-bold bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">
+              <span className="text-xl font-bold bg-gradient-to-r from-brand-blue to-gray-700 bg-clip-text text-transparent">
                 Waxhaw Digital
               </span>
             </motion.div>
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
-              <a href="#services" className="text-gray-600 hover:text-gray-900 transition-colors">Services</a>
-              <a href="#about" className="text-gray-600 hover:text-gray-900 transition-colors">About</a>
-              <a href="#testimonials" className="text-gray-600 hover:text-gray-900 transition-colors">Testimonials</a>
-              <a href="#contact" className="text-gray-600 hover:text-gray-900 transition-colors">Contact</a>
-              <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
+              <a href="#services" className="text-gray-600 hover:text-brand-blue transition-colors">Services</a>
+              <a href="#about" className="text-gray-600 hover:text-brand-blue transition-colors">About</a>
+              <a href="#testimonials" className="text-gray-600 hover:text-brand-blue transition-colors">Testimonials</a>
+              <a href="#contact" className="text-gray-600 hover:text-brand-blue transition-colors">Contact</a>
+              <Button className="bg-gradient-to-r from-brand-blue to-brand-teal hover:from-brand-blue/90 hover:to-brand-teal/90">
                 Get Started
               </Button>
             </div>
@@ -150,11 +150,11 @@ function App() {
               className="md:hidden py-4 border-t border-gray-200"
             >
               <div className="flex flex-col space-y-4">
-                <a href="#services" className="text-gray-600 hover:text-gray-900 transition-colors">Services</a>
-                <a href="#about" className="text-gray-600 hover:text-gray-900 transition-colors">About</a>
-                <a href="#testimonials" className="text-gray-600 hover:text-gray-900 transition-colors">Testimonials</a>
-                <a href="#contact" className="text-gray-600 hover:text-gray-900 transition-colors">Contact</a>
-                <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 w-full">
+                <a href="#services" className="text-gray-600 hover:text-brand-blue transition-colors">Services</a>
+                <a href="#about" className="text-gray-600 hover:text-brand-blue transition-colors">About</a>
+                <a href="#testimonials" className="text-gray-600 hover:text-brand-blue transition-colors">Testimonials</a>
+                <a href="#contact" className="text-gray-600 hover:text-brand-blue transition-colors">Contact</a>
+                <Button className="bg-gradient-to-r from-brand-blue to-brand-teal hover:from-brand-blue/90 hover:to-brand-teal/90 w-full">
                   Get Started
                 </Button>
               </div>
@@ -180,10 +180,10 @@ function App() {
             
             <motion.h1 
               variants={fadeInUp}
-              className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-gray-700 to-gray-900 bg-clip-text text-transparent leading-tight"
+              className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-brand-blue via-gray-700 to-brand-blue bg-clip-text text-transparent leading-tight"
             >
               Digital Growth for
-              <span className="block bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              <span className="block bg-gradient-to-r from-brand-blue to-brand-teal bg-clip-text text-transparent">
                 Small Businesses
               </span>
             </motion.h1>
@@ -202,12 +202,12 @@ function App() {
             >
               <Button 
                 size="lg" 
-                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 px-8 py-3 text-lg"
+                className="bg-gradient-to-r from-brand-blue to-brand-teal hover:from-brand-blue/90 hover:to-brand-teal/90 px-8 py-3 text-lg"
               >
                 Start Your Project
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button variant="outline" size="lg" className="px-8 py-3 text-lg">
+              <Button variant="outline" size="lg" className="px-8 py-3 text-lg border-brand-blue text-brand-blue hover:bg-brand-blue/5">
                 View Our Work
               </Button>
             </motion.div>
@@ -283,10 +283,10 @@ function App() {
               <motion.div key={index} variants={fadeInUp}>
                 <Card className="h-full hover:shadow-lg transition-all duration-300 border-0 shadow-md">
                   <CardHeader>
-                    <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center mb-4">
+                    <div className="w-12 h-12 bg-gradient-to-r from-brand-blue to-brand-teal rounded-lg flex items-center justify-center mb-4">
                       <service.icon className="h-6 w-6 text-white" />
                     </div>
-                    <CardTitle className="text-xl mb-2">{service.title}</CardTitle>
+                    <CardTitle className="text-xl mb-2 text-brand-blue">{service.title}</CardTitle>
                     <CardDescription className="text-gray-600 leading-relaxed">
                       {service.description}
                     </CardDescription>
@@ -357,13 +357,13 @@ function App() {
               variants={fadeInUp}
               className="relative"
             >
-              <div className="aspect-square bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 text-white">
+              <div className="aspect-square bg-gradient-to-r from-brand-blue to-brand-teal rounded-2xl p-8 text-white">
                 <div className="h-full flex flex-col justify-center">
                   <h3 className="text-2xl font-bold mb-4">Ready to Grow?</h3>
                   <p className="text-blue-100 mb-6">
                     Join the businesses that have transformed their digital presence with us.
                   </p>
-                  <Button variant="secondary" className="w-fit">
+                  <Button variant="secondary" className="w-fit bg-white text-brand-blue hover:bg-gray-100">
                     Schedule a Call
                   </Button>
                 </div>
@@ -472,7 +472,7 @@ function App() {
                   <Input placeholder="Email Address" type="email" />
                   <Input placeholder="Phone Number" type="tel" />
                   <Textarea placeholder="Tell us about your project..." className="min-h-32" />
-                  <Button className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
+                  <Button className="w-full bg-gradient-to-r from-brand-blue to-brand-teal hover:from-brand-blue/90 hover:to-brand-teal/90">
                     Send Message
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
@@ -488,18 +488,18 @@ function App() {
               className="space-y-8"
             >
               <div>
-                <h3 className="text-xl font-semibold mb-6 text-gray-900">Get in Touch</h3>
+                <h3 className="text-xl font-semibold mb-6 text-brand-blue">Get in Touch</h3>
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
-                    <Mail className="h-5 w-5 text-blue-600" />
+                    <Mail className="h-5 w-5 text-brand-teal" />
                     <span className="text-gray-600">hello@waxhawdigital.com</span>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <Phone className="h-5 w-5 text-blue-600" />
+                    <Phone className="h-5 w-5 text-brand-teal" />
                     <span className="text-gray-600">(704) 555-0123</span>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <MapPin className="h-5 w-5 text-blue-600" />
+                    <MapPin className="h-5 w-5 text-brand-teal" />
                     <span className="text-gray-600">Waxhaw, NC</span>
                   </div>
                 </div>
@@ -508,7 +508,7 @@ function App() {
               <Separator />
 
               <div>
-                <h3 className="text-xl font-semibold mb-4 text-gray-900">Office Hours</h3>
+                <h3 className="text-xl font-semibold mb-4 text-brand-blue">Office Hours</h3>
                 <div className="space-y-2 text-gray-600">
                   <div className="flex justify-between">
                     <span>Monday - Friday</span>
@@ -535,7 +535,7 @@ function App() {
           <div className="grid md:grid-cols-4 gap-8">
             <div className="col-span-2">
               <div className="flex items-center space-x-2 mb-4">
-                <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
+                <div className="w-8 h-8 bg-gradient-to-r from-brand-blue to-brand-teal rounded-lg flex items-center justify-center">
                   <span className="text-white font-bold text-sm">W</span>
                 </div>
                 <span className="text-xl font-bold">Waxhaw Digital</span>
@@ -571,7 +571,7 @@ function App() {
           
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © 2024 Waxhaw Digital. All rights reserved.
+              &copy; 2024 Waxhaw Digital. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">
